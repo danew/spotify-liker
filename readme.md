@@ -14,7 +14,7 @@ The is a simple script which uses the Spotify Web API to like the song you're cu
    ```sh
    ./setCreds <client id> <client secret>
    ```
-4. Run the script
+4. Run the script — beware it will open a browser so you can authorize your account to be accessed.
    ```sh
    node app.js
    ```
