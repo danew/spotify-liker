@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+const yargs = require('yargs/yargs');
+const { hideBin } = require('yargs/helpers');
+const config = require('./lib/config');
+
+const { _: [clientId, clientSecret] } = yargs(hideBin(process.argv)).argv;
+config.set('clientId', clientId);
+config.set('clientSecret', clientSecret);
+
+console.log("Done");
